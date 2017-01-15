@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  color: rgba(255,255,255,.95);
+}		
+
+#grad1 {
+  text-align:center;
+  margin:auto;
+  color:#f3f3f3;
+  font-size:30px;
+  font-weight:550;
+  padding-top:105px;
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(
+	141deg,
+	#0fb8ad 0%,
+	#1fc8db 51%,
+	#2cb5e8 75%
+  );
+
+}
+nav {
+    }
+header {
+  height: 500px;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+  position: ;
+  background: linear-gradient(270deg, #18f0b8, #18a2f0, #db5640);
+  background-size: 600% 600%;
+  animation: Gradient 60s ease infinite;
+}
+header > #menubtn {
+  position: fixed;
+  float: left;
+  margin: 16px 24px;
+  color: white;
+  /* This is border-guide for easier markup */
+  /*border: 2px solid red;*/
+}
+header > #menubtn a:hover {
+color: white;
+}
+	header > #menubtn a:visited {
+		color: white;
+	}
+	}
+	header > #menubtn a:link {
+		color: white;
+	}
+	}
+	header > #menubtn a:active {
+		color: white;
+	}
+
+	header > #logo {
+		width: auto;
+		height: 100px;
+		margin: 15px auto 0px auto;
+	/* This is border-guide for easier markup */
+		/*border: 2px solid red;*/
+		
+	}
+
+	header > #mctext {
+		font-weight: 300;
+		font-size: 4em;
+	/* This is border-guide for easier markup */
+		/*border: 2px solid red;*/
+	}
+
+	header > #moto {
+		font-weight: 200;
+	/* This is border-guide for easier markup */
+		/*border: 2px solid red;*/
+
+	}
+
+	footer {
+
+	}
+
+	@keyframes Gradient { 
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+
