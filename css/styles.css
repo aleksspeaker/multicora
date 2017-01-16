@@ -5,11 +5,10 @@
 }
 
 body {
-  margin: 0;
   color: rgba(255,255,255,.95);
 }		
 
-#grad1 {
+/*#grad1 {
   text-align:center;
   margin:auto;
   color:#f3f3f3;
@@ -24,7 +23,7 @@ body {
 	#1fc8db 51%,
 	#2cb5e8 75%
   );
-}
+}*/
 nav {
     }
 header {
@@ -35,7 +34,7 @@ header {
   position: ;
   background: linear-gradient(270deg, #18f0b8, #18a2f0, #db5640);
   background-size: 600% 600%;
-  animation: Gradient 60s ease infinite;
+  animation: Gradient 240s linear infinite;
 }
 header > #menubtn {
   position: fixed;
