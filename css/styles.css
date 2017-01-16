@@ -52,9 +52,14 @@ color: white;
 	header > #menubtn a:visited {
 		color: white;
 	}
+
 	header > #menubtn a:link {
 		color: white;
 	}
+	header > #menubtn a:link {
+		color: white;
+	}
+
 	header > #menubtn a:active {
 		color: white;
 	}
