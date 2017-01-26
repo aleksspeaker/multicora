@@ -1,12 +1,20 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body {
+
+/*body {
   color: #fafafa;
-}		
+}	*/
+
+
+.jumbotron {
+	height: 100vh;
+	text-align: center;
+}
+
 
 /*#grad1 {
   text-align:center;
@@ -24,78 +32,83 @@ body {
 	#2cb5e8 75%
   );
 }*/
-nav {
-    }
+/*
 header {
-  height: 100vw;
-  width: 100%;
-  text-align: center;
-  margin: 0;
-  padding-top: 10px;
-  position: ;
-  background: linear-gradient(270deg, #18f0b8, #18a2f0, #db5640);
-  background-size: 600% 600%;
-  animation: Gradient 240s linear infinite;
+    height: 100vw;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    position: ;
+    background: linear-gradient(270deg, #18f0b8, #18a2f0, #db5640);
+    background-size: 600% 600%;
+    animation: Gradient 240s linear infinite;
 }
+
 header.container {
-	margin: 0;
+    margin: 0;
 }
+
 header > #menubtn {
-  position: fixed;
-  float: left;
-  margin: 16px 24px;
-  color: white;
-  /* This is border-guide for easier markup */
-  /*border: 2px solid red;*/
+    position: fixed;
+    float: left;
+    margin: 16px 24px;
+    color: white;
+    /* This is border-guide for easier markup */
+    /*border: 2px solid red;*/
 }
+
 header > #menubtn a:hover {
-color: white;
+    color: white;
 }
-	header > #menubtn a:visited {
-		color: white;
-	}
 
-	header > #menubtn a:link {
-		color: white;
-	}
-	header > #menubtn a:link {
-		color: white;
-	}
+header > #menubtn a:visited {
+    color: white;
+}
 
-	header > #menubtn a:active {
-		color: white;
-	}
+header > #menubtn a:link {
+    color: white;
+}
 
-	header > #logo {
-		width: auto;
-		height: 100px;
-		margin: 15px auto 0px auto;
-	/* This is border-guide for easier markup */
-		/*border: 2px solid red;*/
-		
-	}
+header > #menubtn a:link {
+    color: white;
+}
 
-	header > #mctext {
-		font-weight: 300;
-		font-size: 4em;
-	/* This is border-guide for easier markup */
-		/*border: 2px solid red;*/
-	}
+header > #menubtn a:active {
+    color: white;
+}
 
-	header > #moto {
-		font-weight: 200;
-	/* This is border-guide for easier markup */
-		/*border: 2px solid red;*/
+header > #logo {
+    width: auto;
+    height: 100px;
+    margin: 15px auto 0px auto;
+    /* This is border-guide for easier markup */
+    /*border: 2px solid red;*/
+}
 
-	}
+header > #mctext {
+    font-weight: 300;
+    font-size: 4em;
+    /* This is border-guide for easier markup */
+    /*border: 2px solid red;*/
+}
 
-	footer {
+header > #moto {
+    font-weight: 200;
+    /* This is border-guide for easier markup */
+    /*border: 2px solid red;*/
+}
+*/
+footer {}
 
-	}
-
-	@keyframes Gradient { 
-		0%{background-position:0% 50%}
-		50%{background-position:100% 50%}
-		100%{background-position:0% 50%}
-	}
-
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
