@@ -5,7 +5,7 @@
 }
 
 body {
-  color: rgba(255,255,255,.95);
+  color: #fafafa;
 }		
 
 /*#grad1 {
@@ -27,7 +27,8 @@ body {
 nav {
     }
 header {
-  height: 500px;
+  height: 100vw;
+  width: 100%;
   text-align: center;
   margin: 0;
   padding-top: 10px;
@@ -35,6 +36,9 @@ header {
   background: linear-gradient(270deg, #18f0b8, #18a2f0, #db5640);
   background-size: 600% 600%;
   animation: Gradient 240s linear infinite;
+}
+header.container {
+	margin: 0;
 }
 header > #menubtn {
   position: fixed;
