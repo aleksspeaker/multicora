@@ -2,18 +2,69 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 
-/*body {
-  color: #fafafa;
-}	*/
+body {
+  background: #fafafa;
+  color: rgba(0,0,0,.7);
+}	
+
+html {
+  font-size: 14px;
+}
 
 
 .jumbotron {
 	height: 100vh;
 	text-align: center;
+    background: linear-gradient(270deg, #18f0b8, #dbcc47, #db922f, #db5640, #af6fdb, #18a2f0, #3b74db);
+    background-size: 600% 600%;
+    animation: Gradient 200s linear infinite;
+    text-shadow: 2px 2px 10px rgba(0,0,0,.5);
 }
+
+h1 {
+    font-weight: 100;
+}
+
+#logo {
+    margin-bottom: 25px;
+    font-weight: 400;
+    opacity: .6;
+    shadow: 2px 2px 10px rgba(0,0,0,.5);
+    -webkit-filter: drop-shadow(3px 3px 3px #222);
+    filter: drop-shadow(3px 3px 3px #222);
+}
+#logotype {
+    font-size: 6rem;
+}
+ .navbar {
+    background: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+ }
+
+ button.navbar-toggler {
+    margin-top: 16px;
+    border: 0;
+ }
+
+#swipe-image {
+    height: 50px;
+    margin-top: 30vh;
+    opacity: .5;
+    /*animation: swipe-up 1s infinite alternate;*/
+}
+
+/*@keyframes swipe-up {
+    0% {
+        height: 50px;
+    }
+    100%{
+        height: 100px;
+    }*/
 
 
 /*#grad1 {
@@ -112,3 +163,31 @@ footer {}
         background-position: 0% 50%
     }
 }
+
+/*Extra small devices*/
+@media screen and (max-width: 699px) and (min-width: 320px) {
+    h1#logotype{
+        font-size: 4rem;
+    }
+}
+
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media screen and (min-width: 576px) {
+  
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { h1 {
+    font-size: 6rem;
+} }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { h1 {
+    font-size: 6rem;
+} }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { h1 {
+    font-size: 6rem;
+} }
