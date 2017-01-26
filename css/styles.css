@@ -52,19 +52,19 @@ h1 {
  }
 
 #swipe-image {
-    height: 50px;
+    height: 70px;
     margin-top: 30vh;
     opacity: .5;
-    /*animation: swipe-up 1s infinite alternate;*/
+    animation: swipe-up 1s infinite alternate;
 }
 
-/*@keyframes swipe-up {
+@keyframes swipe-up {
     0% {
-        height: 50px;
+        margin-top: 30vh;
     }
     100%{
-        height: 100px;
-    }*/
+        margin-top: 32vh;
+    }
 
 
 /*#grad1 {
