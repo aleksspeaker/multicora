@@ -30,7 +30,7 @@
     .logo {
         max-width: 400px;
         margin-bottom: 25px;
-        -webkit-filter: drop-shadow(2px 2px 7px #7d7d7d);
+        -webkit-filter: drop-shadow(2px 2px 7px #bcbcbc);
         filter: drop-shadow(2px 2px 7px #7d7d7d);
     }
     
