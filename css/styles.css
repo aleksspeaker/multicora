@@ -94,3 +94,7 @@
     /*Small devices (landscape phones, 576px and up)*/
     
     @media screen and (min-width: 576px) {}
+
+    .bg-white{
+    background:#ffffff !important;
+}
