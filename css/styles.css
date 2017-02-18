@@ -17,10 +17,9 @@
     .jumbotron {
         height: 100vh;
         text-align: center;
-        background: linear-gradient(270deg, #98ffe3, #ffe5af, #ffa8a2, #e1bdff, #a3d4ff, #b1ffa7, #7a91db);
+        background: linear-gradient(270deg, #ffe5af, #ffa8a2, #e1bdff, #a3d4ff, #8ca9ff);
         background-size: 600% 600%;
-        animation: Gradient 200s linear infinite;
-        /*text-shadow: 2px 2px 10px rgba(0, 0, 0, .3);*/
+        animation: Gradient 100s linear infinite;
     }
     
     h1 {
@@ -38,17 +37,25 @@
     }
     
     .logo {
-        max-width: 400px;
-        margin-bottom: 25px;
-        -webkit-filter: drop-shadow(2px 2px 7px rgba(0,0,0,.1));
-        filter: drop-shadow(2px 2px 7px rgba(0,0,0,.1));
+      margin-top: -30px;
+      width: 100%;
+      z-index: -200;
+      padding: 10px;
+    }
+    .logotype {
+      padding: 30px;
+      margin-top: -60px;
+      margin-bottom: 30px;
+      width: 100%;
+      max-width: 420px;
     }
     
-    #logotype {
-        font-size: 6rem;
-    }
-    
+    #it-sol {
+            margin-top: -30px;
+            font-size: 2rem;
+          }
     .navbar {
+        z-index: 1;
         background: transparent;
         padding-top: 0;
         padding-bottom: 0;
@@ -68,10 +75,12 @@
     }
     
     #services {
+        margin-top: -30px;
         background: #FFFFFF;
         color: rgba(0,0,0,.87);
         width: 100%;
         font-size: 1.2rem;
+        padding-bottom: 30px;
     }
 
     #vectors {
@@ -104,13 +113,14 @@
     /*Extra small devices*/
     
     @media screen and (max-width: 699px) and (min-width: 320px) {
-        h1#logotype {
-            font-size: 3.5rem;
+        .logo {
+            margin-top: -60px;
+            margin-bottom: -40px;
         }
-        #logo {
-            height: 120px;
-            margin-top: 30px;
-            margin-bottom: 40px;
+
+        #it-sol {
+            margin-top: -30px;
+            font-size: 1.5rem;
         }
     }
     /*Small devices (landscape phones, 576px and up)*/
@@ -127,9 +137,90 @@
 
 
 #pwa{
-background: url("../images/pwa.png") no-repeat right fixed;
-background-size: 50%;
+/*background: url("../images/pwa.png") no-repeat right fixed;
+*/background-size: 50%;
 padding: 20px;
-
-
 }
+
+
+
+
+/*LOGO ANIMATION*/
+
+
+
+
+
+
+path {
+  stroke-dasharray: 3172;
+  stroke: #333;
+  fill: rgba(0,0,0,0);
+  animation: draw 4s forwards;
+}
+@keyframes draw {
+  0% {
+    stroke-dashoffset: -3172;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    fill: rgba(0,0,0,0);
+  }
+  100% {
+    fill: #333;
+  }
+}
+.left {
+  opacity: 0;
+  animation: circle-left 0.3s forwards;
+}
+@keyframes circle-left {
+  0% {
+    opacity: 0;
+  }
+  50% {r: 2;}
+  100% {
+    opacity: 1;
+  }
+}
+.right {
+  opacity: 0;
+  animation: circle-right 0.3s 0.5s forwards;
+}
+@keyframes circle-right {
+  0% {
+    opacity: 0;
+  }
+  50% {r: 2;}
+  100% {
+    opacity: 1;
+  }
+}
+.big-circle {
+  opacity: 0;
+  transform-origin: 50% 50%;
+  animation: big-circ 2s 1s;
+}
+
+@keyframes big-circ {
+  0% {
+    opacity: 0;
+    r: 1;
+  }
+  50% {
+    opacity: 1;
+    r: 1;
+  }
+  100% {
+    opacity: 0;
+    r: 2;
+ 
+  }
+}
+
+
+
+
+
+
+/*END OF LOGO ANIMATION*/
