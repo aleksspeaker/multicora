@@ -17,9 +17,11 @@
     .jumbotron {
         height: 100vh;
         text-align: center;
+        background: -webkit-linear-gradient(right, #ffe5af, #ffa8a2, #e1bdff, #a3d4ff, #8ca9ff);
         background: linear-gradient(270deg, #ffe5af, #ffa8a2, #e1bdff, #a3d4ff, #8ca9ff);
         background-size: 600% 600%;
-        animation: Gradient 100s linear infinite;
+        -webkit-animation: Gradient 100s linear infinite;
+                animation: Gradient 100s linear infinite;
     }
     
     h1 {
@@ -88,6 +90,17 @@
         width: 100%;
     }
 
+    @-webkit-keyframes swipe-up {
+        0% {
+            margin-top: 20vh;
+            opacity: .3;
+        }
+        100% {
+            margin-top: 23vh;
+            opacity: 0;
+        }
+    }
+
     @keyframes swipe-up {
         0% {
             margin-top: 20vh;
@@ -96,6 +109,18 @@
         100% {
             margin-top: 23vh;
             opacity: 0;
+        }
+    }
+    
+    @-webkit-keyframes Gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
         }
     }
     
@@ -156,7 +181,20 @@ path {
   stroke-dasharray: 3172;
   stroke: #333;
   fill: rgba(0,0,0,0);
-  animation: draw 4s forwards;
+  -webkit-animation: draw 4s forwards;
+          animation: draw 4s forwards;
+}
+@-webkit-keyframes draw {
+  0% {
+    stroke-dashoffset: -3172;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    fill: rgba(0,0,0,0);
+  }
+  100% {
+    fill: #333;
+  }
 }
 @keyframes draw {
   0% {
@@ -172,7 +210,17 @@ path {
 }
 .left {
   opacity: 0;
-  animation: circle-left 0.3s forwards;
+  -webkit-animation: circle-left 0.3s forwards;
+          animation: circle-left 0.3s forwards;
+}
+@-webkit-keyframes circle-left {
+  0% {
+    opacity: 0;
+  }
+  50% {r: 2;}
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes circle-left {
   0% {
@@ -185,7 +233,17 @@ path {
 }
 .right {
   opacity: 0;
-  animation: circle-right 0.3s 0.5s forwards;
+  -webkit-animation: circle-right 0.3s 0.5s forwards;
+          animation: circle-right 0.3s 0.5s forwards;
+}
+@-webkit-keyframes circle-right {
+  0% {
+    opacity: 0;
+  }
+  50% {r: 2;}
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes circle-right {
   0% {
@@ -198,8 +256,26 @@ path {
 }
 .big-circle {
   opacity: 0;
-  transform-origin: 50% 50%;
-  animation: big-circ 2s 1s;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation: big-circ 2s 1s;
+          animation: big-circ 2s 1s;
+}
+
+@-webkit-keyframes big-circ {
+  0% {
+    opacity: 0;
+    r: 1;
+  }
+  50% {
+    opacity: 1;
+    r: 1;
+  }
+  100% {
+    opacity: 0;
+    r: 2;
+ 
+  }
 }
 
 @keyframes big-circ {
